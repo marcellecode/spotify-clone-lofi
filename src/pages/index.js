@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import coverPlaylist from "@/assets/img/playListCover.png";
 
 export default function Home() {
   return (
@@ -16,6 +14,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.hero}>
+          <div className={styles.heroImage}>
+            <Image
+              src={coverPlaylist}
+              width={300}
+              height={300}
+              alt="Picture of the author"
+            />
+          </div>
           <div className={styles.heroText}>
             <h1>lofi for code and study 🌚</h1>
             <span>Music for focus when you code and study</span>

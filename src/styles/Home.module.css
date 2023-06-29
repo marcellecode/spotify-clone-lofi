@@ -7,16 +7,48 @@
 }
 
 .hero {
-  background-color: blue;
+  background-color: #C71585;
   width: 100%;
   height: calc(100vh - 60vh);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  border-radius: 7px 7px 0px 0px;
 }
 
+.heroImage {
+  height: 100%;
+  padding: 35px;
+  object-fit: cover;
+  overflow: hidden;
+  align-items: center;
+  /* background-color: aliceblue; */
+  display: flex;
+}
+
+/* .heroImage img{
+  -webkit-box-shadow: 0px 1px 118px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 118px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 118px -13px rgba(0,0,0,0.75);
+} */
+
 .heroText {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-family:'Montserrat';
+}
+
+.heroText h1 {
+  font-weight: 800;
+  font-size: 4vw;
+  margin-bottom: 15px;
+}
+.heroText span {
+  opacity: 0.8;
+  font-weight: 500;
+  letter-spacing: 0px;
+  font-size: 14px;
 }
 
 .musicList {
