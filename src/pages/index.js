@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import coverPlaylist from "@/assets/img/playListCover.png";
+import { BsFillPlayFill, BsSearch, BsArrowDownCircle } from "react-icons/bs";
+import { BiSolidDownArrow } from "react-icons/bi";
+import { MdOutlinePersonAdd } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -27,7 +30,21 @@ export default function Home() {
             <span>Music for focus when you code and study</span>
           </div>
         </div>
-        <div className={styles.musicList}></div>
+        <div className={styles.musicList}>
+          <div className={styles.playListControl}>
+            <div className={styles.playListControlLeft}>
+              <BsFillPlayFill className={styles.playButton} />
+              <button className={styles.outlineButton}>Enriquecer</button>
+              <BsArrowDownCircle  className={styles.downloadButton}/>
+              <MdOutlinePersonAdd  className={styles.addContributionUser}/>
+            </div>
+            <div className={styles.playListControlRight}>
+              <BsSearch className={styles.searchButton} />
+              <button className={styles.dropdownButton}>Ordem personalizada <BiSolidDownArrow className={styles.dropdownButtonIcon}/></button>
+            </div>
+          </div>
+          <div className={styles.musicTable}></div>
+        </div>
       </main>
     </>
   );
